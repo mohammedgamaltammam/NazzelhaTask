@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oza-CG-J8b">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--nazzelha app-->
+        <scene sceneID="DQp-Hh-2Oi">
+            <objects>
+                <tableViewController id="xjL-2O-nkw" customClass="FlickrSearchResultsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rsh-f7-HFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="searchTableCell" id="ZAz-OB-Jih" customClass="SearchResultViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZAz-OB-Jih" id="b7D-En-KyR">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6d-Lu-pVA">
+                                            <rect key="frame" x="376" y="2" width="216" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="85" id="cuk-q2-1tO"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="cuk-q2-1tO"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="cuk-q2-1tO"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIN-0x-Ta4">
+                                            <rect key="frame" x="5" y="11" width="350" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="o5M-hL-3G3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="o5M-hL-3G3"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="o5M-hL-3G3"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="HIN-0x-Ta4" secondAttribute="centerY" id="0mO-s9-Pwo"/>
+                                        <constraint firstItem="HIN-0x-Ta4" firstAttribute="top" secondItem="b7D-En-KyR" secondAttribute="topMargin" constant="-6" id="IzS-Dh-im6"/>
+                                        <constraint firstItem="e6d-Lu-pVA" firstAttribute="leading" secondItem="HIN-0x-Ta4" secondAttribute="trailing" constant="-1" id="N3t-Kf-ZcS"/>
+                                        <constraint firstItem="HIN-0x-Ta4" firstAttribute="leading" secondItem="b7D-En-KyR" secondAttribute="leadingMargin" id="Sbg-O0-ZgW"/>
+                                        <constraint firstItem="e6d-Lu-pVA" firstAttribute="trailing" secondItem="b7D-En-KyR" secondAttribute="trailingMargin" id="TTG-x5-nT6"/>
+                                        <constraint firstItem="e6d-Lu-pVA" firstAttribute="top" secondItem="b7D-En-KyR" secondAttribute="topMargin" constant="-6" id="bad-8y-j2v"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="HIN-0x-Ta4" secondAttribute="bottom" constant="-6" id="ieN-oq-Z6B"/>
+                                        <constraint firstAttribute="centerY" secondItem="e6d-Lu-pVA" secondAttribute="centerY" id="xsd-gt-OZ4"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="0mO-s9-Pwo"/>
+                                            <exclude reference="IzS-Dh-im6"/>
+                                            <exclude reference="Sbg-O0-ZgW"/>
+                                            <exclude reference="ieN-oq-Z6B"/>
+                                            <exclude reference="N3t-Kf-ZcS"/>
+                                            <exclude reference="TTG-x5-nT6"/>
+                                            <exclude reference="bad-8y-j2v"/>
+                                            <exclude reference="xsd-gt-OZ4"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="0mO-s9-Pwo"/>
+                                            <include reference="IzS-Dh-im6"/>
+                                            <include reference="Sbg-O0-ZgW"/>
+                                            <include reference="ieN-oq-Z6B"/>
+                                            <include reference="N3t-Kf-ZcS"/>
+                                            <include reference="TTG-x5-nT6"/>
+                                            <include reference="bad-8y-j2v"/>
+                                            <include reference="xsd-gt-OZ4"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImageView" destination="e6d-Lu-pVA" id="xhE-81-tFQ"/>
+                                    <outlet property="cellTitle" destination="HIN-0x-Ta4" id="crz-Lz-icM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xjL-2O-nkw" id="cyz-6l-b1Z"/>
+                            <outlet property="delegate" destination="xjL-2O-nkw" id="tbU-MT-JDV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="nazzelha app" id="3un-kA-jkO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUD-Ms-SJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="558"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nJl-rr-51K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oza-CG-J8b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eUs-Fg-Fsn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xjL-2O-nkw" kind="relationship" relationship="rootViewController" id="qU6-7U-QP1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Wj-rF-siU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="560"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		962F1F5B1A0A19CA00E08083 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 962F1F5A1A0A19CA00E08083 /* Photo.m */; };
+		962F1F5F1A0A1C7900E08083 /* FlickrPhotosParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 962F1F5E1A0A1C7900E08083 /* FlickrPhotosParser.m */; };
+		9670FC771A08FF8600D3FA91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670FC761A08FF8600D3FA91 /* main.m */; };
+		9670FC7D1A08FF8600D3FA91 /* FlickrSearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670FC7C1A08FF8600D3FA91 /* FlickrSearchResultsTableViewController.m */; };
+		9670FC801A08FF8600D3FA91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9670FC7E1A08FF8600D3FA91 /* Main.storyboard */; };
+		9670FC821A08FF8600D3FA91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9670FC811A08FF8600D3FA91 /* Images.xcassets */; };
+		9670FC851A08FF8600D3FA91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9670FC831A08FF8600D3FA91 /* LaunchScreen.xib */; };
+		9670FC911A08FF8600D3FA91 /* NazzelhaTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670FC901A08FF8600D3FA91 /* NazzelhaTaskTests.m */; };
+		9670FCA31A09151B00D3FA91 /* SearchResultViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670FCA21A09151B00D3FA91 /* SearchResultViewCell.m */; };
+		9670FCA71A092E2600D3FA91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670FCA61A092E2600D3FA91 /* AppDelegate.m */; };
+		9670FCAE1A09397000D3FA91 /* FlickrDataRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670FCAD1A09397000D3FA91 /* FlickrDataRetriever.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9670FC8B1A08FF8600D3FA91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9670FC691A08FF8600D3FA91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9670FC701A08FF8600D3FA91;
+			remoteInfo = NazzelhaTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		962F1F591A0A19CA00E08083 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		962F1F5A1A0A19CA00E08083 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		962F1F5D1A0A1C7900E08083 /* FlickrPhotosParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotosParser.h; sourceTree = "<group>"; };
+		962F1F5E1A0A1C7900E08083 /* FlickrPhotosParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotosParser.m; sourceTree = "<group>"; };
+		9670FC711A08FF8600D3FA91 /* NazzelhaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NazzelhaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9670FC751A08FF8600D3FA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9670FC761A08FF8600D3FA91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9670FC7B1A08FF8600D3FA91 /* FlickrSearchResultsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrSearchResultsTableViewController.h; sourceTree = "<group>"; };
+		9670FC7C1A08FF8600D3FA91 /* FlickrSearchResultsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchResultsTableViewController.m; sourceTree = "<group>"; };
+		9670FC7F1A08FF8600D3FA91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9670FC811A08FF8600D3FA91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9670FC841A08FF8600D3FA91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9670FC8A1A08FF8600D3FA91 /* NazzelhaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NazzelhaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9670FC8F1A08FF8600D3FA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9670FC901A08FF8600D3FA91 /* NazzelhaTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NazzelhaTaskTests.m; sourceTree = "<group>"; };
+		9670FCA11A09151B00D3FA91 /* SearchResultViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewCell.h; sourceTree = "<group>"; };
+		9670FCA21A09151B00D3FA91 /* SearchResultViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewCell.m; sourceTree = "<group>"; };
+		9670FCA51A092E2600D3FA91 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9670FCA61A092E2600D3FA91 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9670FCAC1A09397000D3FA91 /* FlickrDataRetriever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrDataRetriever.h; sourceTree = "<group>"; };
+		9670FCAD1A09397000D3FA91 /* FlickrDataRetriever.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrDataRetriever.m; sourceTree = "<group>"; };
+		9670FCAF1A093F0200D3FA91 /* FlickrDataRetrieverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrDataRetrieverDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9670FC6E1A08FF8600D3FA91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9670FC871A08FF8600D3FA91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		962F1F581A0A19A600E08083 /* dataAccessObjects */ = {
+			isa = PBXGroup;
+			children = (
+				962F1F591A0A19CA00E08083 /* Photo.h */,
+				962F1F5A1A0A19CA00E08083 /* Photo.m */,
+			);
+			path = dataAccessObjects;
+			sourceTree = "<group>";
+		};
+		962F1F5C1A0A1C5C00E08083 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				962F1F5D1A0A1C7900E08083 /* FlickrPhotosParser.h */,
+				962F1F5E1A0A1C7900E08083 /* FlickrPhotosParser.m */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		9670FC681A08FF8600D3FA91 = {
+			isa = PBXGroup;
+			children = (
+				9670FC731A08FF8600D3FA91 /* NazzelhaTask */,
+				9670FC8D1A08FF8600D3FA91 /* NazzelhaTaskTests */,
+				9670FC721A08FF8600D3FA91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9670FC721A08FF8600D3FA91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9670FC711A08FF8600D3FA91 /* NazzelhaTask.app */,
+				9670FC8A1A08FF8600D3FA91 /* NazzelhaTaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9670FC731A08FF8600D3FA91 /* NazzelhaTask */ = {
+			isa = PBXGroup;
+			children = (
+				962F1F5C1A0A1C5C00E08083 /* parser */,
+				962F1F581A0A19A600E08083 /* dataAccessObjects */,
+				9670FCAB1A092EF300D3FA91 /* flickr */,
+				9670FCA41A092E2600D3FA91 /* appDelegate */,
+				9670FCA81A092E2F00D3FA91 /* viewControllers */,
+				9670FC7E1A08FF8600D3FA91 /* Main.storyboard */,
+				9670FC811A08FF8600D3FA91 /* Images.xcassets */,
+				9670FC831A08FF8600D3FA91 /* LaunchScreen.xib */,
+				9670FC741A08FF8600D3FA91 /* Supporting Files */,
+			);
+			path = NazzelhaTask;
+			sourceTree = "<group>";
+		};
+		9670FC741A08FF8600D3FA91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9670FC751A08FF8600D3FA91 /* Info.plist */,
+				9670FC761A08FF8600D3FA91 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9670FC8D1A08FF8600D3FA91 /* NazzelhaTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				9670FC901A08FF8600D3FA91 /* NazzelhaTaskTests.m */,
+				9670FC8E1A08FF8600D3FA91 /* Supporting Files */,
+			);
+			path = NazzelhaTaskTests;
+			sourceTree = "<group>";
+		};
+		9670FC8E1A08FF8600D3FA91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9670FC8F1A08FF8600D3FA91 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9670FCA41A092E2600D3FA91 /* appDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9670FCA51A092E2600D3FA91 /* AppDelegate.h */,
+				9670FCA61A092E2600D3FA91 /* AppDelegate.m */,
+			);
+			path = appDelegate;
+			sourceTree = "<group>";
+		};
+		9670FCA81A092E2F00D3FA91 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9670FCA91A092E4700D3FA91 /* mainView */,
+				9670FCAA1A092E5300D3FA91 /* customCell */,
+			);
+			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		9670FCA91A092E4700D3FA91 /* mainView */ = {
+			isa = PBXGroup;
+			children = (
+				9670FC7B1A08FF8600D3FA91 /* FlickrSearchResultsTableViewController.h */,
+				9670FC7C1A08FF8600D3FA91 /* FlickrSearchResultsTableViewController.m */,
+			);
+			name = mainView;
+			sourceTree = "<group>";
+		};
+		9670FCAA1A092E5300D3FA91 /* customCell */ = {
+			isa = PBXGroup;
+			children = (
+				9670FCA11A09151B00D3FA91 /* SearchResultViewCell.h */,
+				9670FCA21A09151B00D3FA91 /* SearchResultViewCell.m */,
+			);
+			name = customCell;
+			sourceTree = "<group>";
+		};
+		9670FCAB1A092EF300D3FA91 /* flickr */ = {
+			isa = PBXGroup;
+			children = (
+				9670FCAC1A09397000D3FA91 /* FlickrDataRetriever.h */,
+				9670FCAD1A09397000D3FA91 /* FlickrDataRetriever.m */,
+				9670FCAF1A093F0200D3FA91 /* FlickrDataRetrieverDelegate.h */,
+			);
+			path = flickr;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9670FC701A08FF8600D3FA91 /* NazzelhaTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9670FC941A08FF8600D3FA91 /* Build configuration list for PBXNativeTarget "NazzelhaTask" */;
+			buildPhases = (
+				9670FC6D1A08FF8600D3FA91 /* Sources */,
+				9670FC6E1A08FF8600D3FA91 /* Frameworks */,
+				9670FC6F1A08FF8600D3FA91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NazzelhaTask;
+			productName = NazzelhaTask;
+			productReference = 9670FC711A08FF8600D3FA91 /* NazzelhaTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9670FC891A08FF8600D3FA91 /* NazzelhaTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9670FC971A08FF8600D3FA91 /* Build configuration list for PBXNativeTarget "NazzelhaTaskTests" */;
+			buildPhases = (
+				9670FC861A08FF8600D3FA91 /* Sources */,
+				9670FC871A08FF8600D3FA91 /* Frameworks */,
+				9670FC881A08FF8600D3FA91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9670FC8C1A08FF8600D3FA91 /* PBXTargetDependency */,
+			);
+			name = NazzelhaTaskTests;
+			productName = NazzelhaTaskTests;
+			productReference = 9670FC8A1A08FF8600D3FA91 /* NazzelhaTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9670FC691A08FF8600D3FA91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mohammed Gamal";
+				TargetAttributes = {
+					9670FC701A08FF8600D3FA91 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					9670FC891A08FF8600D3FA91 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9670FC701A08FF8600D3FA91;
+					};
+				};
+			};
+			buildConfigurationList = 9670FC6C1A08FF8600D3FA91 /* Build configuration list for PBXProject "NazzelhaTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9670FC681A08FF8600D3FA91;
+			productRefGroup = 9670FC721A08FF8600D3FA91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9670FC701A08FF8600D3FA91 /* NazzelhaTask */,
+				9670FC891A08FF8600D3FA91 /* NazzelhaTaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9670FC6F1A08FF8600D3FA91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9670FC801A08FF8600D3FA91 /* Main.storyboard in Resources */,
+				9670FC851A08FF8600D3FA91 /* LaunchScreen.xib in Resources */,
+				9670FC821A08FF8600D3FA91 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9670FC881A08FF8600D3FA91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9670FC6D1A08FF8600D3FA91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F1F5B1A0A19CA00E08083 /* Photo.m in Sources */,
+				9670FCA71A092E2600D3FA91 /* AppDelegate.m in Sources */,
+				9670FC7D1A08FF8600D3FA91 /* FlickrSearchResultsTableViewController.m in Sources */,
+				9670FCA31A09151B00D3FA91 /* SearchResultViewCell.m in Sources */,
+				9670FC771A08FF8600D3FA91 /* main.m in Sources */,
+				962F1F5F1A0A1C7900E08083 /* FlickrPhotosParser.m in Sources */,
+				9670FCAE1A09397000D3FA91 /* FlickrDataRetriever.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9670FC861A08FF8600D3FA91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9670FC911A08FF8600D3FA91 /* NazzelhaTaskTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9670FC8C1A08FF8600D3FA91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9670FC701A08FF8600D3FA91 /* NazzelhaTask */;
+			targetProxy = 9670FC8B1A08FF8600D3FA91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9670FC7E1A08FF8600D3FA91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9670FC7F1A08FF8600D3FA91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9670FC831A08FF8600D3FA91 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9670FC841A08FF8600D3FA91 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9670FC921A08FF8600D3FA91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9670FC931A08FF8600D3FA91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9670FC951A08FF8600D3FA91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NazzelhaTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9670FC961A08FF8600D3FA91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NazzelhaTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9670FC981A08FF8600D3FA91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NazzelhaTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NazzelhaTask.app/NazzelhaTask";
+			};
+			name = Debug;
+		};
+		9670FC991A08FF8600D3FA91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NazzelhaTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NazzelhaTask.app/NazzelhaTask";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9670FC6C1A08FF8600D3FA91 /* Build configuration list for PBXProject "NazzelhaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9670FC921A08FF8600D3FA91 /* Debug */,
+				9670FC931A08FF8600D3FA91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9670FC941A08FF8600D3FA91 /* Build configuration list for PBXNativeTarget "NazzelhaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9670FC951A08FF8600D3FA91 /* Debug */,
+				9670FC961A08FF8600D3FA91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9670FC971A08FF8600D3FA91 /* Build configuration list for PBXNativeTarget "NazzelhaTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9670FC981A08FF8600D3FA91 /* Debug */,
+				9670FC991A08FF8600D3FA91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9670FC691A08FF8600D3FA91 /* Project object */;
+}
